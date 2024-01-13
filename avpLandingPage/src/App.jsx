@@ -7,6 +7,8 @@ import 'tailwindcss/tailwind.css';
 import Header from './components/Header';
 import MainPage from './components/MainPage';
 import OurServices from './components/Ourservices';
+import Footer from './components/Footer';
+import ContactUs from './components/ContactUs';
 function App() {
 
   return (
@@ -34,6 +36,8 @@ function App() {
       <Header />
       <MainPage />
       <OurServices />
+      <ContactUs />
+      <Footer />
       <h1 className="text-3xl bg-blue font-bold underline">Hello world!</h1>
 
     </>
