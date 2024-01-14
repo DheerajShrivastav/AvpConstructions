@@ -1,6 +1,8 @@
 import React from 'react';
 import avp_logo from '../assets/avp_logo.jpeg';
 
+import { Link } from 'react-router-dom';
+
 const Header = () => {
     return (
         <header style={{ backgroundColor: 'transparent' }}>
@@ -19,10 +21,18 @@ const Header = () => {
                     </svg>
                 </label>
                 <ul className="flex flex-col sm:flex-row sm:items-center sm:space-x-4 sm:space-y-0 sm:ml-auto">
-                    <li className="text-white">About</li>
-                    <li className="text-white">Contact Us</li>
-                    <li className="text-white">Services</li>
-                    <li className="text-white">Our Work</li>
+                    <li className="text-white">
+                        <Link to="/about">About</Link>
+                    </li>
+                    <li className="text-white">
+                        <Link to="/contact">Contact Us</Link>
+                    </li>
+                    <li className="text-white">
+                        <Link to="/services">Services</Link>
+                    </li>
+                    <li className="text-white">
+                        <Link to="/work">Our Work</Link>
+                    </li>
                 </ul>
             </nav>
         </header>
