@@ -1,12 +1,13 @@
 import React from 'react';
 import avp_logo from '../assets/avp_logo.jpeg';
+import 'typeface-poppins';
 
 import { Link } from 'react-router-dom';
 
 const Header = () => {
     return (
         <header style={{ backgroundColor: 'transparent' }}>
-            <nav className="bg-gray-800 flex flex-wrap items-center justify-between px-4 py-2">
+            <nav className="bg-gray-800 flex flex-wrap items-center justify-between px-4 py-2 font-poppins">
                 <div className="flex items-center">
                     <img src={avp_logo} alt="AVP Logo" className="h-8 w-30 mr-2" />
                     <span className="text-white font-bold">AVP Group</span>
