@@ -9,14 +9,14 @@ const ContactUs = () => {
               Feel free to reach out to us for any inquiries or feedback.
             </p>
             <ul className="list-disc ml-6 mb-4">
-              <li>Email: example@example.com</li>
+              <li>Email: avp.erndvp@gamil.com</li>
               <li>
                 WhatsApp:{' '}
-                <a href="https://wa.me/1234567890" className="text-blue-500">
+                <a href="https://wa.me/9766776617" className="text-blue-500">
                   Click here
                 </a>
               </li>
-              <li>Phone: 123-456-7890</li>
+              <li>Phone: 9766776617</li>
             </ul>
             <iframe
               title="Google Maps"
