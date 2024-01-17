@@ -1,5 +1,6 @@
 import React from 'react';
 import avp_logo from '../assets/avp_logo.jpeg';
+import 'typeface-poppins';
 
 import { Link } from 'react-router-dom';
 
