@@ -12,8 +12,12 @@ const Header = () => {
       >
         <nav className="bg-gray-800 flex flex-wrap items-center justify-between px-4 py-2">
           <div className="flex items-center">
-            <img src={avp_logo} alt="AVP Logo" className="h-8 w-30 mr-2" />
-            <span className="text-white font-bold">AVP Group</span>
+            <a href="/">
+              <img src={avp_logo} alt="AVP Logo" className="h-8 w-30 mr-2" />
+            </a>
+            <a href="/">
+              <span className="text-white font-bold">AVP Group</span>
+            </a>
           </div>
           <input type="checkbox" id="menu-toggle" className="hidden" />
           <label htmlFor="menu-toggle" className="text-white cursor-pointer">
