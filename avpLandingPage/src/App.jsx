@@ -15,15 +15,24 @@ function App() {
   return (
     <Router>
       <Header />
-      
+
       <Routes>
-        <Route exact path="/" element={<MainPage />} />
+        <Route
+          exact
+          path="/"
+          element={
+            <>
+              <MainPage />
+              <OurServices />
+              <ContactUs />
+            </>
+          }
+        />
         <Route path="/services" element={<OurServices />} />
         <Route path="/contact" element={<ContactUs />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />
-      <h1 className="text-3xl bg-blue font-bold underline">Hello world!</h1>
     </Router>
   )
 }
