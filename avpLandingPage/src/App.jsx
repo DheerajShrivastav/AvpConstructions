@@ -10,6 +10,7 @@ import Footer from './components/Footer';
 import ContactUs from './components/ContactUs';
 import NotFound from './components/NotFound.jsx'; // Add the missing import statement for NotFound component
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import MoreInfoAboutUs from './components/MoreInfoAboutUs.jsx';
 
 function App() {
   return (
@@ -30,6 +31,8 @@ function App() {
         />
         <Route path="/services" element={<OurServices />} />
         <Route path="/contact" element={<ContactUs />} />
+        <Route path="/work" element={<NotFound />} />
+        <Route path="/more-information" element={<MoreInfoAboutUs />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />
