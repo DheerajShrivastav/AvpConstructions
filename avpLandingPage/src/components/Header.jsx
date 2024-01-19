@@ -1,9 +1,9 @@
 import 'typeface-poppins'
 import React, { useState, useEffect } from 'react'
-import { Link } from 'react-router-dom'
 import avp_logo from '../assets/avp_logo.jpeg'
 import MenuIcon from '@mui/icons-material/Menu'
 import CloseIcon from '@mui/icons-material/Close';
+import { Link as ScrollLink } from 'react-scroll'
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -29,19 +29,29 @@ const Header = () => {
   const navLinks = (
     <ul className="flex flex-col space-y-4 sm:flex-row sm:items-center sm:space-x-4 sm:space-y-0 sm:ml-auto">
       <li className="text-white">
-        <a href="/">Home</a>
+        <ScrollLink to="home" smooth={true} duration={500}>
+          Home
+        </ScrollLink>
       </li>
       <li className="text-white">
-        <a href="#service">Services</a>
+        <ScrollLink to="service" smooth={true} duration={500}>
+          Services
+        </ScrollLink>
       </li>
       <li className="text-white">
-        <a href="#about">About</a>
+        <ScrollLink to="about" smooth={true} duration={500}>
+          About
+        </ScrollLink>
       </li>
       <li className="text-white">
-        <a href="#contact">Contact Us</a>
+        <ScrollLink to="contact" smooth={true} duration={500}>
+          Contact Us
+        </ScrollLink>
       </li>
       <li className="text-white">
-        <Link to="/work">Our Work</Link>
+        <ScrollLink to="/work" smooth={true} duration={500}>
+          Our Work
+        </ScrollLink>
       </li>
     </ul>
   )
