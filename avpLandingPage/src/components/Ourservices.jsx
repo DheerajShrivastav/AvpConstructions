@@ -1,24 +1,30 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import Real from '../assets/Real.png';
+import React from 'react'
+import { Link } from 'react-router-dom'
+import Real from '../assets/Real.png'
+import RealEstate from '../assets/RealEstate.jpg'
+import ExecutionWork from '../assets/ExecutionWork.jpg'
 
 const OurServices = () => {
   return (
     <div>
-      <div id="service" className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
-        {/* Service 1 */}
-        <div>
-          <img src={Real} alt="Construction Consultant" className="w-full" />
-          <p className="text-center">Construction Consultant</p>
-        </div>
+      <div
+        id="service"
+        className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4"
+      >
+       
+          {/* Service 1 */}
+          <div>
+            <img src={Real} alt="Construction Consultant" className="w-full" />
+            <p className="text-center">Construction Consultant</p>
+          </div>
         {/* Service 2 */}
         <div>
-          <img src={Real} alt="Real Estate" className="w-full" />
+          <img src={RealEstate} alt="Real Estate" className="w-full" />
           <p className="text-center">Real Estate</p>
         </div>
         {/* Service 3 */}
         <div>
-          <img src={Real} alt="Execution Work" className="w-full" />
+          <img src={ExecutionWork} alt="Execution Work" className="w-full" />
           <p className="text-center">Execution Work</p>
         </div>
         {/* Service 4 */}
@@ -50,16 +56,23 @@ const OurServices = () => {
       <div id="about" className="text-center">
         <h3 className="text-2xl font-bold mb-4">Why us?</h3>
         <p className="text-gray-700 pb-4">
-          ACS Construction Group was formed over 20 years ago to break boundaries and build excellence. We do this through being a people-first business.
+          ACS Construction Group was formed over 20 years ago to break
+          boundaries and build excellence. We do this through being a
+          people-first business.
         </p>
         <p className="text-gray-700 pb-4">
-          The majority of our team are employed directly by us and we always recruit and guide our employees based on our four core values: be innovative, be experts, be driven and be committed.
+          The majority of our team are employed directly by us and we always
+          recruit and guide our employees based on our four core values: be
+          innovative, be experts, be driven and be committed.
         </p>
         <p className="text-gray-700 pb-4">
-          Our values guide us all by continuously challenging our approach and pushing the boundaries to offer innovative, cutting-edge solutions.
+          Our values guide us all by continuously challenging our approach and
+          pushing the boundaries to offer innovative, cutting-edge solutions.
         </p>
         <p className="text-gray-700 pb-4">
-          We take pride in being highly knowledgeable experts in our field. Always committed to excellence, we act with drive and integrity to exceed our clients' expectations.
+          We take pride in being highly knowledgeable experts in our field.
+          Always committed to excellence, we act with drive and integrity to
+          exceed our clients' expectations.
         </p>
       </div>
       <div className="text-center">
@@ -70,7 +83,7 @@ const OurServices = () => {
         </Link>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default OurServices;
+export default OurServices
