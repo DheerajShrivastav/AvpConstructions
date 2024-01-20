@@ -4,6 +4,7 @@ import avp_logo from '../assets/avp_logo.jpeg'
 import MenuIcon from '@mui/icons-material/Menu'
 import CloseIcon from '@mui/icons-material/Close';
 import { Link as ScrollLink } from 'react-scroll'
+import { Link } from 'react-router-dom';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -29,29 +30,19 @@ const Header = () => {
   const navLinks = (
     <ul className="flex flex-col space-y-4 sm:flex-row sm:items-center sm:space-x-4 sm:space-y-0 sm:ml-auto">
       <li className="text-white">
-        <ScrollLink to="home" smooth={true} duration={500}>
-          Home
-        </ScrollLink>
+        <Link to="/">Home</Link>
       </li>
       <li className="text-white">
-        <ScrollLink to="service" smooth={true} duration={500}>
-          Services
-        </ScrollLink>
+        <Link to="services">Services</Link>
       </li>
       <li className="text-white">
-        <ScrollLink to="about" smooth={true} duration={500}>
-          About
-        </ScrollLink>
+        <Link to="about">About</Link>
       </li>
       <li className="text-white">
-        <ScrollLink to="contact" smooth={true} duration={500}>
-          Contact Us
-        </ScrollLink>
+        <Link to="contact">Contact Us</Link>
       </li>
       <li className="text-white">
-        <ScrollLink to="/work" smooth={true} duration={500}>
-          Our Work
-        </ScrollLink>
+        <Link to="/work">Our Work</Link>
       </li>
     </ul>
   )
