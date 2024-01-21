@@ -2,9 +2,9 @@ import 'typeface-poppins'
 import React, { useState, useEffect } from 'react'
 import avp_logo from '../assets/avp_logo.jpeg'
 import MenuIcon from '@mui/icons-material/Menu'
-import CloseIcon from '@mui/icons-material/Close';
+import CloseIcon from '@mui/icons-material/Close'
 import { Link as ScrollLink } from 'react-scroll'
-import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom'
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -33,13 +33,13 @@ const Header = () => {
         <Link to="/">Home</Link>
       </li>
       <li className="text-white">
-        <Link to="services">Services</Link>
+        <a href="#service">Services</a>
       </li>
       <li className="text-white">
-        <Link to="about">About</Link>
+        <a href="#about">About</a>
       </li>
       <li className="text-white">
-        <Link to="contact">Contact Us</Link>
+        <a href="#contact">Contact Us</a>
       </li>
       <li className="text-white">
         <Link to="/work">Our Work</Link>
