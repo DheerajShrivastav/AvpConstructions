@@ -30,7 +30,7 @@ const Header = () => {
   const navLinks = (
     <ul className="flex flex-col space-y-4 sm:flex-row sm:items-center sm:space-x-4 sm:space-y-0 sm:ml-auto">
       <li className="text-white">
-        <Link to="/">Home</Link>
+        <Link to="/AvpConstructions/">Home</Link>
       </li>
       <li className="text-white">
         <a href="#service">Services</a>
