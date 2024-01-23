@@ -30,7 +30,7 @@ const Header = () => {
   const navLinks = (
     <ul className="flex flex-col space-y-4 sm:flex-row sm:items-center sm:space-x-4 sm:space-y-0 sm:ml-auto">
       <li className="text-white">
-        <Link to="/AvpConstructions/">Home</Link>
+        <a href="/AvpConstructions/">Home</a>
       </li>
       <li className="text-white">
         <a href="#service">Services</a>
@@ -51,10 +51,10 @@ const Header = () => {
     <header className="fixed top-0 w-full z-50">
       <nav className="bg-gray-800 flex flex-wrap items-center justify-between px-4 py-2">
         <div className="flex items-center">
-          <a href="/">
+          <a href="/AvpConstructions/">
             <img src={avp_logo} alt="AVP Logo" className="h-8 w-30 mr-2" />
           </a>
-          <a href="/">
+          <a href="/AvpConstructions/">
             <span className="text-white font-bold">AVP Group</span>
           </a>
         </div>
