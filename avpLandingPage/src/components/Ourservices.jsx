@@ -1,56 +1,58 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import Real from '../assets/Real.png'
+import './Ourservices.css';
 import RealEstate from '../assets/RealEstate.jpg'
+import 'typeface-poppins';
 import ExecutionWork from '../assets/ExecutionWork.jpg'
 
 const OurServices = () => {
   return (
     <div>
-      <div
+      <div 
         id="service"
         className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4"
       >
        
           {/* Service 1 */}
-          <div>
-            <img src={Real} alt="Construction Consultant" className="w-full" />
-            <p className="text-center">Construction Consultant</p>
+          <div className="service-card bg-blue-5 p-4 w-80 h-80">
+            <img src={Real} alt="Construction Consultant" className="w-full rounded-full" />
+            <p className="text-center text-white font-poppins font-bold">Construction Consultant</p>
           </div>
         {/* Service 2 */}
-        <div>
-          <img src={RealEstate} alt="Real Estate" className="w-full" />
-          <p className="text-center">Real Estate</p>
+        <div className="service-card bg-blue-5 p-6 w-80 h-80">
+          <img src={RealEstate} alt="Real Estate" className="w-full rounded-full" />
+          <p className="text-center text-white font-poppins font-bold">Real Estate</p>
         </div>
         {/* Service 3 */}
-        <div>
-          <img src={ExecutionWork} alt="Execution Work" className="w-full" />
-          <p className="text-center">Execution Work</p>
+        <div className="service-card bg-blue-5 p-6 w-80 h-80">
+          <img src={ExecutionWork} alt="Execution Work" className="w-full rounded-full" />
+          <p className="text-center text-white font-poppins font-bold">Execution Work</p>
         </div>
         {/* Service 4 */}
-        <div>
-          <img src={Real} alt="Maintenance Work" className="w-full" />
-          <p className="text-center">Maintenance Work</p>
+        <div className="service-card bg-blue-5 p-6 w-80 h-80">
+          <img src={Real} alt="Maintenance Work" className="w-full w-full rounded-full" />
+          <p className="text-center text-white font-poppins font-bold">Maintenance Work</p>
         </div>
-        {/* Service 5 */}
-        <div>
-          <img src={Real} alt="Engineering Works" className="w-full" />
-          <p className="text-center">Engineering Works</p>
-        </div>
+                          {/* Service 5 */}
+                  <div className="service-card bg-blue-5 p-6 w-80 h-80">
+                    <img src={Real} alt="Engineering Works" className="w-full rounded-full" />
+                    <p className="text-center text-white font-poppins font-bold">Engineering Works</p>
+                  </div>
         {/* Service 6 */}
-        <div>
-          <img src={Real} alt="Architectural Works" className="w-full" />
-          <p className="text-center">Architectural Works</p>
+        <div className="service-card bg-blue-5 p-6 w-80 h-80">
+          <img src={Real} alt="Architectural Works" className="w-full w-full rounded-full" />
+          <p className="text-center text-white font-poppins font-bold">Architectural Works</p>
         </div>
         {/* Service 7 */}
-        <div>
-          <img src={Real} alt="Interior Works" className="w-full" />
-          <p className="text-center">Interior Works</p>
+        <div className="service-card bg-blue-5 p-6 w-80 h-80">
+          <img src={Real} alt="Interior Works" className="w-full w-full rounded-full" />
+          <p className="text-center text-white font-poppins font-bold">Interior Works</p>
         </div>
         {/* Service 8 */}
-        <div>
-          <img src={Real} alt="Land Survey" className="w-full" />
-          <p className="text-center">Land Survey</p>
+        <div className="service-card bg-blue-5 p-6 w-80 h-80">
+          <img src={Real} alt="Land Survey" className="w-full w-full rounded-full" />
+          <p className="text-center text-white font-poppins font-bold">Land Survey</p>
         </div>
       </div>
       <div id="about" className="text-center">

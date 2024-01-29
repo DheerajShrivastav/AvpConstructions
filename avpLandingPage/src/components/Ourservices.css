@@ -1,0 +1,30 @@
+.service-card {
+  padding: 20px;
+  
+  transition: 0.3s;
+  border-radius: 50px; /* 5px rounded corners */
+  background-color: #6d7f99;
+  
+
+   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2); 
+}
+
+.service-card:hover {
+  box-shadow: 0 8px 5px 0 #3a2c0e
+}
+
+.service-image {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  object-fit:cover ;
+}
+
+.service-description {
+  text-align: center;
+  font-size: 20px;
+  font-family: poppins;
+  color: white;
+  font-weight: bold;
+  
+}
